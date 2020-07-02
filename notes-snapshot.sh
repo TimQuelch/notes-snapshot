@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Change to notes directory
-cd "/mnt/org/notes" || exit
+cd "/mnt/org/org/notes" || exit
 
 # Add all .org files
 find . -iname "*.org" -print0 | xargs -0 git add

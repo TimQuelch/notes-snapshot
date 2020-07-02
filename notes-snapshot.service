@@ -1,0 +1,5 @@
+[Unit]
+Description=Snapshot notes and push to origin
+
+[Service]
+ExecStart=/usr/local/bin/notes-snapshot.sh

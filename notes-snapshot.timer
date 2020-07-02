@@ -1,0 +1,8 @@
+[Unit]
+Description=Snapshot notes hourly
+
+[Timer]
+OnCalendar=hourly
+
+[Install]
+WantedBy=timers.target

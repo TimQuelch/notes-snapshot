@@ -5,8 +5,8 @@ notesdir="/mnt/org/org/notes"
 # Change to notes directory
 cd "$notesdir" || exit
 
-# Add all .org files
-find . -iname "*.org" -print0 | xargs -0 git add
+# Add all .org and .org_archive files
+find . -iregex '.*\.org\(_archive\)?' -print0 | xargs -0 git add
 
 # Remove deleted files
 git diff --name-only --diff-filter=D -z | xargs -0 git rm --cached

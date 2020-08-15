@@ -1,6 +1,6 @@
 #!/bin/sh
 
-notesdir="/mnt/org/org/notes"
+notesdir="/home/ec2-user/syncthing/data/org/"
 
 # Change to notes directory
 cd "$notesdir" || exit
